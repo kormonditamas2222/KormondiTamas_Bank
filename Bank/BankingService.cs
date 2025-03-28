@@ -11,6 +11,6 @@ namespace Bank
         Owner owner;
         public BankingService(Owner owner) { this.owner = owner; }
 
-        internal Owner Owner { get => owner; set => owner = value; }
+        public Owner Owner { get => owner; }
     }
 }
