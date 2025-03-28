@@ -14,7 +14,7 @@ namespace Bank
 
         }
 
-        public double Balance { get => balance; }
+        public double Balance { get; protected set; }
 
         public void Deposit(double amount)
         {
