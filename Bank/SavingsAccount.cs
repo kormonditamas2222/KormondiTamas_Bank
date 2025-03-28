@@ -8,7 +8,7 @@ namespace Bank
 {
     internal class SavingsAccount : BankAccount
     {
-        static double baseInterest;
+        static double baseInterest = 0.1;
         public double Interest { get; set; }
         public SavingsAccount(Owner owner) : base(owner)
         {
@@ -26,7 +26,7 @@ namespace Bank
         }
         public void AddInterest()
         {
-            Balance += Balance * (Interest / 100);
+            Balance += Balance * Interest;
         }
     }
 }
