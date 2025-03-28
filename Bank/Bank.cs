@@ -23,7 +23,7 @@ namespace Bank
         }
         public double TotalBalance(Owner owner)
         {
-            return accounts.Sum(account => account.Balance);
+            return accounts.Sum(x => x.Balance);
         }
         public BankAccount MaximalBalanceAccount(Owner owner) 
         {
